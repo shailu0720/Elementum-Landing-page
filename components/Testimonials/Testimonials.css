@@ -1,0 +1,54 @@
+.testimonials{
+    width:100%;
+    padding:80px 8%;
+    background:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.testimonials-img{
+    width:100%;
+    max-width:1400px;
+    height:auto;
+    display:block;
+}
+
+/* ---------------- Tablet ---------------- */
+
+@media (max-width:992px){
+
+.testimonials{
+
+padding:60px 30px;
+
+}
+
+.testimonials-img{
+
+max-width:100%;
+
+}
+
+}
+
+/* ---------------- Mobile ---------------- */
+
+@media (max-width:768px){
+
+.testimonials{
+
+padding:40px 20px;
+
+}
+
+.testimonials-img{
+
+width:100%;
+max-width:100%;
+height:auto;
+
+}
+
+}

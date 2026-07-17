@@ -1,0 +1,267 @@
+ .about{
+    width:100%;
+    padding:40px 8% 120px;
+    position:relative;
+    
+    overflow:hidden;
+    background:#fff;
+}
+
+/* ---------- Glow ---------- */
+
+.about-glow{
+
+    position:absolute;
+
+    width:260px;
+    height:260px;
+
+    background:#f7c0cf;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    left:50%;
+    top:45%;
+
+    transform:translate(-50%,-50%);
+
+    opacity:.45;
+
+    z-index:0;
+}
+
+/* ---------- Curve ---------- */
+
+.about-curve{
+    position:absolute;
+
+    width:820px;
+
+    left:50%;
+    top:165px;
+
+    transform:translateX(-50%);
+
+    z-index:1;
+
+    pointer-events:none;
+
+    opacity:1;
+}
+
+/* ---------- Rows ---------- */
+
+.about-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    position:relative;
+
+    z-index:3;
+}
+
+.bottom-row{
+
+    margin-top:-20px;
+}
+
+/* ---------- Text ---------- */
+
+.about-text{
+
+    width:39%;
+}
+
+.about-text h2{
+
+    font-size:30px;
+
+    line-height:1.05;
+
+    font-weight:500;
+
+    color:#111;
+}
+
+.about-text span{
+
+    background:#dff1da;
+
+    padding:3px 12px;
+
+    border-radius:40px;
+}
+
+.about-text .plain{
+
+    background:none;
+
+    padding:0;
+}
+
+.about-text p{
+
+    margin-top:22px;
+
+    width:340px;
+
+    color:#666;
+
+    font-size:10px;
+
+    line-height:1.8;
+}
+
+.about-text a{
+
+    display:inline-block;
+
+    margin-top:18px;
+
+    color:#111;
+
+    text-decoration:none;
+
+    border-bottom:1px solid #111;
+
+    padding-bottom:3px;
+
+    font-size:15px;
+}
+
+/* ---------- Images ---------- */
+
+.about-image{
+
+    width:42%;
+
+    display:flex;
+
+    justify-content:center;
+
+    position:relative;
+}
+
+.about-image img{
+
+    max-width:310px;
+    width: 100%;
+
+    border-radius:50%;
+
+    position:relative;
+
+    z-index:4;
+}
+
+/* Move images similar to Figma */
+
+.meeting-image{
+    margin-right:20px;
+    margin-top:-35px;
+}
+
+.team-image{
+    margin-left:-20px;
+    margin-top:30px;
+}
+/* ---------- Polygon ---------- */
+
+.polygon-top{
+
+    position:absolute;
+
+    width:82px;
+
+    top:120px;
+
+    right:120px;
+
+    transform:rotate(18deg);
+
+    z-index:2;
+}
+
+/* ---------- Triangle ---------- */
+
+.triangle-bottom{
+
+    position:absolute;
+
+    width:90px;
+
+    left:300px;
+
+    bottom:70px;
+
+    z-index:5;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width:900px){
+
+.about{
+    padding:60px 20px;
+}
+
+.about-row{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:50px;
+    margin-bottom:70px;
+}
+
+.bottom-row{
+    flex-direction:column-reverse;
+    margin-top:0;
+}
+
+.about-text,
+.about-image{
+    width:100%;
+    text-align:center;
+}
+
+.about-text h2{
+    font-size:36px;
+    line-height:1.2;
+}
+
+.about-text p{
+    width:100%;
+    max-width:450px;
+    margin:20px auto;
+    font-size:15px;
+    line-height:1.7;
+}
+
+.about-text a{
+    font-size:16px;
+}
+
+.about-image img{
+    width:260px;
+    max-width:100%;
+}
+
+.meeting-image,
+.team-image{
+    margin:0;
+}
+
+.about-glow,
+.about-curve,
+.polygon-top,
+.triangle-bottom{
+    display:none;
+}
+
+}
